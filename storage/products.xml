@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<products>
+<productTitle>Tove</productTitle>
+<price>4.75</price>
+<vendorId>1</vendorId>
+<inStock>0</inStock>
+</products>
+<products>
+<productTitle>Carrot</productTitle>
+<price>3.85</price>
+<vendorId>2</vendorId>
+<inStock>1</inStock>
+</products>
+<products>
+<productTitle>Baloon</productTitle>
+<price>25.85</price>
+<vendorId>2</vendorId>
+<inStock>1</inStock>
+</products>
+<products>
+<productTitle>Bottle</productTitle>
+<price>1.85</price>
+<vendorId>3</vendorId>
+<inStock>1</inStock>
+</products>
+</list>
