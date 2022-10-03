@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Contracts\Reader;
+use App\Contracts\ReaderInterface;
 use Illuminate\Console\Command;
 class CountByPrice extends Command
 {
@@ -25,7 +25,7 @@ class CountByPrice extends Command
      *
      * @return int
      */
-    public function handle(Reader $reader)
+    public function handle(ReaderInterface $reader)
     {
         $min_price = $this->argument('min_price');
         $max_price = $this->argument('max_price');

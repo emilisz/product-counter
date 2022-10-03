@@ -2,10 +2,10 @@
 
 namespace App\Log\Types;
 
-use App\Contracts\Reader;
+use App\Contracts\ReaderInterface;
 use App\Log\Counter;
 
-class CsvLogger implements Reader
+class CsvLogger implements ReaderInterface
 {
     /**
      * Reads Csv file

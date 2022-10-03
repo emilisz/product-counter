@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Contracts\Reader;
+use App\Contracts\ReaderInterface;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -18,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
         $reader = config("log.{$default}.class");
 
         $this->app->bind(
-            Reader::class, // the reader interface
+            ReaderInterface::class, // the reader interface
             $reader
         );
 

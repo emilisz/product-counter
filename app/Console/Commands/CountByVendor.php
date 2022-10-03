@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Contracts\Reader;
+use App\Contracts\ReaderInterface;
 use Illuminate\Console\Command;
 
 class CountByVendor extends Command
@@ -26,7 +26,7 @@ class CountByVendor extends Command
      *
      * @return int
      */
-    public function handle(Reader $reader)
+    public function handle(ReaderInterface $reader)
     {
         $vendor_id = $this->argument('vendor_id');
 

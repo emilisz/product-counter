@@ -2,11 +2,11 @@
 
 namespace App\Log\Types;
 
-use App\Contracts\Reader;
+use App\Contracts\ReaderInterface;
 use App\Log\Counter;
 use Illuminate\Support\Facades\Http;
 
-class JsonLogger implements Reader
+class JsonLogger implements ReaderInterface
 {
     /**
      * Reads json file
