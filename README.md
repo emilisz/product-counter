@@ -1,4 +1,4 @@
-# Homework
+# Offers counter
 
 Laravel CLI commands implementation
 
@@ -16,6 +16,12 @@ composer install
 
 ```bash
 npm install
+```
+
+* Run migration and seeders for testing data endpoint:
+
+```bash
+php artisan migrate--seed
 ```
 
 Make key if needed: 
@@ -36,5 +42,15 @@ php artisan count_by:vendor_id {vendor_id}
 
 # Tests
 php artisan test
+
+```
+
+## Change data source inside .env file
+
+```bash
+
+# LOG_TARGET="json" is compactible with LOG_SOURCE="jsonUrl" or LOG_SOURCE="jsonFile" etc.
+LOG_TARGET="json" # json, xml, csv
+LOG_SOURCE="jsonUrl" # jsonFile, jsonUrl, xmlFile, xmlUrl, csvFile
 
 ```
